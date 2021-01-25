@@ -56,8 +56,8 @@ if button and df is not None:
 
     tree = buldTree(algorithm, data)
 
-    with st.beta_expander('Visualize the tree'):
-        st.write('Sometime you have to scroll down to see the tree')
-        visual_tree = export_graphviz(
-            tree, max_depth=max_depth, feature_names=feature_names, filled=True)
-        st.graphviz_chart(visual_tree)
+    st.header('Visualize the tree')
+    st.write('Sometime you have to scroll down to see the tree')
+    visual_tree = export_graphviz(
+        tree, max_depth=max_depth, feature_names=feature_names, filled=True)
+    st.graphviz_chart(visual_tree)
