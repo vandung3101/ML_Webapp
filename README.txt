@@ -12,6 +12,6 @@ Dataset (.csv):
 WebApp:
     - Make sure your system satisfied 'requirements.txt'
     - Run
-        $ streamlit run webapp
+        $ streamlit run webapp.py
     - Webapp now will open with your localhost
     - Follow Webapp UI

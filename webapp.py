@@ -22,7 +22,7 @@ if dataset is not None:
 algorithm = st.sidebar.selectbox('Please select algorithm', [
                                  'Classifier', 'Regressor'])
 max_depth = st.sidebar.slider(
-    'Max depth of tree', min_value=1, max_value=10, value=3)
+    'Max depth of the tree', min_value=1, max_value=10, value=3)
 button = st.sidebar.button('Gender')
 
 
