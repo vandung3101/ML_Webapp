@@ -10,7 +10,17 @@ import numpy as np
 st.image('image.jpg', use_column_width=True)
 st.title('ML Web App')
 with st.beta_expander('README'):
-    pass
+    st.markdown('''
+    #### Dataset (.csv):
+    - Algorithm work best with dataset contains **binary features** (others run well but the prediction will bad) 
+    - Record with ***NaN*** values would be removed by the algorithm
+    - Dataset should following structure (see demo dataset /data.csv):
+    - feature_0      feature_1     ....     feature_n             Target
+    - ----------       -----------     ....     -----------      -------
+    - ----------       -----------     ....     -----------      -------
+    - ----------       -----------     ....     -----------      -------
+    #### All datatype will be converted to numeric for sklearn library, click Show head data below
+    ''')
 st.sidebar.header('Panel')
 st.sidebar.write('(Please read the README first)')
 dataset = st.sidebar.file_uploader(
